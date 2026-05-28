@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>UAS WEB DESIGN BAGIAN 5 CONTACT US</title>
+
+<style>
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	row-gap: 40px;
+	
+	grid-template-areas:
+	'logo logo logo logo logo'
+	'left left left right right'
+    'telp telp telp right right'
+    'data data data right right'
+	'footer-logo footer-logo footer-center footer-right footer-right'
+	}
+	
+.container > div {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	}
+	
+.header { grid-area: logo; 
+		text-align: left !important; 
+		color: black;
+		background-color: white;
+		padding-top: 20px;
+		padding-bottom: 20px;
+        }
+
+/*bagian isi*/ 
+
+.contact-us { grid-area: left;
+            text-align: left !important; 
+		    color: #000066;
+		    background-color: white;
+		    font-size: 48px;
+		    font-weight: 800;
+		    padding-top: 20px;
+			padding-left: 30px;           
+            }
+
+.telp-email { grid-area: telp; 
+            text-align: left !important;
+		    color: #000066;
+		    background-color: white;
+		    font-size: 24px;
+	    	font-weight: 700;
+    		padding-top: 20px;
+			padding-left: 30px;
+            }
+
+.data { grid-area: data; 
+        text-align: left !important;
+		color: #000066;
+	    background-color: white;
+	    font-size: 20px;
+	    font-weight: 700;
+    	padding-top: 10px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		margin-left: 30px;
+		border: 1px solid #000066;
+		border-radius: 5px;
+        }
+
+label {
+	font-size: 16px;
+    opacity: 40%;
+	}
+
+input, textarea {
+	margin-bottom: 20px;
+	padding: 5px;
+	width: 700px;
+	border-radius: 5px;
+	border: 1px solid #000066;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+input:focus, textarea:focus {
+	border: 1px solid #000066;
+	font-size: 16px;
+	}
+
+button {
+	padding: 10px 30px;
+	background-color: #000066;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	}
+	
+button:hover {
+	background-color: #CB0E5D;
+	}
+
+.footer-logo { grid-area: footer-logo; 
+			text-align: center; 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #FFDEEB;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			padding-left: 0px;
+		}
+
+h1 {
+	font-size: 24px;
+	font-style: bold;
+	font-weight: 700;
+}
+
+p {
+	font-size: 16px;
+	font-style: bold;
+	font-weight: 700;
+}
+.footer-center { grid-area: footer-center; 
+			text-align: left;
+			font-size: 16px; 
+			color: #000066;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			padding-left: 0px;
+			background-color: #FFDEEB;
+		}
+
+.footer-center p:hover {
+  color: #CB0E5D;
+  cursor: pointer;
+}
+
+.footer-right { grid-area: footer-right; 
+			text-align: left;
+			font-size: 16px; 
+			color: #000066;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			padding-left: 0px;
+			background-color: #FFDEEB;
+		}
+
+.footer-right p:hover {
+  color: #CB0E5D;
+  cursor: pointer;
+} 
+
+
+</style>
+</head>
+
+<body>
+	 <header class="header">
+
+    <div class="topbar">
+      <div class="left">
+        <a href="#">ID </a>
+        <span class="divider"></span>
+        <a href="#"><strong>EN</strong></a>
+      </div>
+
+      <div class="center">
+        <a href="index.html"><img src="assets/pearlyii_logo_banner.png" alt="LOGO" title="Pearlyii_"></a>
+      </div>
+
+      <div class="right">
+        <span><img src="assets/search_icon.png" alt="search_icon" title="search"></span>
+        <span><img src="assets/heart_icon.png" alt="heart_icon" title="favorites"></span>
+        <span><img src="assets/cart_icon.png" alt="search_icon" title="cart"></span>
+        <span><img src="assets/profile_icon.png" alt="search_icon" title="my profile"></span>
+      </div>
+    </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="coming_soon.html">ABOUT</a>
+      <a href="coming_soon.html">PRODUCT</a>
+      <a href="coming_soon.html">SERIES</a>
+      <a href="custom.html">CUSTOM</a>
+      <a href="coming_soon.html">CONTACTS</a>
+    </nav>
+  </header> 
+
+
+	<div class="container">
+		<div class="contact-us">Contact Us</div>
+        <div class="telp-email">
+            <p>call support or whatsapp: +62 1234 5678 90</p>
+            <p>send an email: supports@pearlyii.com</p>
+        </div>
+		<div class="data">
+			<p>have a question?</p>
+			<form> 	
+			<textarea row="10" cols="30" placeholder="name:"></textarea><br>
+			<textarea row="10" cols="30" placeholder="email:"></textarea><br>
+			<textarea row="10" cols="30" placeholder="phone number:"></textarea><br>
+			<textarea row="10" cols="30" placeholder="description:"></textarea><br>
+			<button href="#">submit</button>
+			</form>
+		</div>
+
+
+
+		<div class="footer-logo"><img src="image/pearlyii.png" width="300px"></div>
+
+	<div class="footer-center">
+			<h1>customer care</h1><br>
+			<p>contact us</p>
+			<p>privacy policy</p>
+			<p>F.A.Q</p>
+			<p>Terms & Conditions</p>
+	</div>
+
+	<div class="footer-right">
+            <h1>Information</h1><br>
+            <p>size chart</p>
+            <p>jewelry care</p>
+            <p>find us at</p>
+			<p><img src="image/findus.png" width="100px"></p>      
+	</div>
+	</div>
+
+	 <nav class="navbar">
+      <a href="uas contact us.html">contact us</a>
+    </nav>
+</body>
+</html>
